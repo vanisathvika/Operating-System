@@ -46,7 +46,6 @@ temp = i;
 break;
 }
 j = log%pagesize; /* here 'j' is displacement */
-temp = base + (temp*pagesize)+j; //lhs 'temp' is physical address rhs and 'temp' is frame 
-num
+temp = base + (temp*pagesize)+j; 
 printf("\nPhysical address is : %d",temp);
 }
