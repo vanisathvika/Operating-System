@@ -12,11 +12,11 @@ printf("\nThe process is divided into %d pages",pages);
 frames = memsize/pagesize;
 printf("\n\nThe main memory is divided into %d frames\n",frames);
 for(i=0;i<frames;i++)
-framearr[i]=-1; /* Initializing array elements with -1*/
+framearr[i]=-1; 
 for(i=0;i<pages;i++){
 pos: printf("\nEnter the frame number of page %d: ",i);
-scanf("%d",&temp); /* storing frameno in temporary variable*/
-if(temp>=frames) /*checking wether frameno is valid or not*/
+scanf("%d",&temp); 
+if(temp>=frames) 
 {
 printf("\n\t****Invalid frame number****\n");
 goto pos;
